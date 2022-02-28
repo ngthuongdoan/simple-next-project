@@ -1,12 +1,13 @@
-import PostContainer from "../../containers/PostContainer/PostContainer";
-import PostWatchLayout from "../../layouts/PostLayout/PostLayout";
+import { NextPage } from 'next';
+import DefaultLayout from 'layouts/DefaultLayout/DefaultLayout';
+import PostContainer from 'containers/PostContainer/PostContainer';
 
-const Post: React.FC = () => {
-  return (
-    <PostWatchLayout>
-      <PostContainer />
-    </PostWatchLayout>
-  );
+const PostPage: NextPage = () => {
+	return (
+		<DefaultLayout>
+			<PostContainer />
+		</DefaultLayout>
+	);
 };
 
-export default Post;
+export default PostPage;

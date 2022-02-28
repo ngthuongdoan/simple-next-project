@@ -1,10 +1,10 @@
-import { configureStore } from "@reduxjs/toolkit";
-import watchReducer from "./features/watch/reducers";
+import { configureStore } from '@reduxjs/toolkit';
+import watchReducer from './module/watch/reducers';
 const rootReducer = {
-  watches: watchReducer,
+	watches: watchReducer,
 };
 const store = configureStore({
-  reducer: rootReducer,
+	reducer: rootReducer,
 });
 
 export default store;

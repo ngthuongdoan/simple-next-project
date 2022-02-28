@@ -1,12 +1,13 @@
-import HomePageContainer from "../containers/HomeContainer/HomeContainer";
-import HomePageLayout from "../layouts/HomeLayout/HomeLayout";
+import DefaultLayout from 'layouts/DefaultLayout/DefaultLayout';
+import HomePageContainer from 'containers/HomeContainer/HomeContainer';
+import { NextPage } from 'next';
 
-export default function Home() {
-  return (
-    <div>
-      <HomePageLayout>
-        <HomePageContainer />
-      </HomePageLayout>
-    </div>
-  );
-}
+const HomePage: NextPage = () => {
+	return (
+		<DefaultLayout>
+			<HomePageContainer />
+		</DefaultLayout>
+	);
+};
+
+export default HomePage;
